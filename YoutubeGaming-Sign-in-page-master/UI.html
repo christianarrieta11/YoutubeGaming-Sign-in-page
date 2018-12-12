@@ -1,0 +1,162 @@
+<style>
+.main-container{
+  margin-left: 35%;
+  margin-top: 10%;
+}
+.square {
+  height: 500px;
+  width: 500px;
+  background-color: 	 	#F8F8F8;
+box-shadow: -1px -1px 69px -8px rgba(194,190,194,1);
+
+
+
+}
+
+form{
+  margin-top: 30%;
+}
+.input{
+
+}
+input{
+  background-color: transparent;
+         border: 0px solid;
+         height: 20px;
+         width: 160px;
+        color: #CCC;
+        margin-top: %;
+    margin-left: 33%;
+   border-bottom: 2px solid;
+   color:black;
+
+}
+.logo{
+  text-align: center;
+}
+
+img{
+  margin-left: 30%;
+
+
+
+}
+a{
+  margin-left: 5%;
+  margin-top: 20%;
+  background-color: transparent;
+  border: 0px solid;
+  height: 20px;
+  width: 160px;
+  text-decoration: none;
+  color: black;
+}
+
+button{
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+
+</style>
+<DOCTYPE html>
+
+
+
+<head>
+
+
+
+</head>
+
+
+
+<body>
+
+          <div class="main-container">
+
+                <div class="square">
+                  <div class="input">
+
+
+
+
+
+
+      <form>
+          <img src="logo.png" height="200px" width="200px"></img>
+
+                    <br>
+                    <br>
+                    <br>
+                    <script>
+                    var objPeople = [
+	{ 
+		username: "chris",
+		password: "tom"
+	},
+	{ 
+		username: "matt",
+		password: "academy"
+	},
+	{ 
+		username: "chris",
+		password: "forever"
+	}
+
+]
+function getInfo() {
+	var username = document.getElementById('username').value
+	var password = document.getElementById('password').value
+
+	for(var i = 0; i < objPeople.length; i++) {
+
+		if(username == objPeople[i].username && password == objPeople[i].password) {
+			console.log(username + " is logged in!!!")
+      window.location.href = "https://www.youtube.com/gaming";
+			
+			return
+		}
+	}
+	console.log("incorrect username or password")
+    alert("incorrect username or password!");
+}
+
+</script>
+
+   <input type="text" id="username" placeholder="User Name">
+   <br>
+   <br>
+   <input type="Password" id="password" placeholer="Password">
+   <br><br>
+   <button type="button" onclick="getInfo()">Log in</button>
+   <a href="">Sign Up</a>
+      
+ </form>
+
+
+ 
+
+
+
+ 
+
+
+                  </div>
+
+
+
+                    </div>
+
+
+                        </div>
+
+</body>
+
+
+
+
+
+
+
+</DOCTYPE html>
