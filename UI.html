@@ -42,7 +42,7 @@ img{
 
 }
 a{
-  margin-left: 42%;
+  margin-left: 5%;
   margin-top: 20%;
   background-color: transparent;
   border: 0px solid;
@@ -51,6 +51,12 @@ a{
   text-decoration: none;
   color: black;
 }
+
+button{
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
 
 </style>
 <DOCTYPE html>
@@ -83,14 +89,57 @@ a{
                     <br>
                     <br>
                     <br>
+                    <script>
+                    var objPeople = [
+	{ 
+		username: "chris",
+		password: "tom"
+	},
+	{ 
+		username: "matt",
+		password: "academy"
+	},
+	{ 
+		username: "chris",
+		password: "forever"
+	}
 
-   <input type="" name="" value="Email">
+]
+function getInfo() {
+	var username = document.getElementById('username').value
+	var password = document.getElementById('password').value
+
+	for(var i = 0; i < objPeople.length; i++) {
+
+		if(username == objPeople[i].username && password == objPeople[i].password) {
+			console.log(username + " is logged in!!!")
+      window.location.href = "https://www.youtube.com/gaming";
+			
+			return
+		}
+	}
+	console.log("incorrect username or password")
+    alert("incorrect username or password!");
+}
+
+</script>
+
+   <input type="text" id="username" placeholder="User Name">
    <br>
    <br>
-   <input type="" name="lastname" value="Password">
+   <input type="Password" id="password" placeholer="Password">
    <br><br>
-      <a href="https://gaming.youtube.com/">Submit</a>
+   <button type="button" onclick="getInfo()">Log in</button>
+   <a href="">Sign Up</a>
+      
  </form>
+
+
+ 
+
+
+
+ 
 
 
                   </div>
